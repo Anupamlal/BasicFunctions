@@ -1,0 +1,6 @@
+framework module BasicFunctions {
+  umbrella header "BasicFunctions.h"
+  export *
+
+  module * { export * }
+}

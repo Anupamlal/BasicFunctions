@@ -1,0 +1,33 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
+// swift-module-flags: -target arm64-apple-ios17.5 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name BasicFunctions
+@_exported import BasicFunctions
+import Foundation
+import Swift
+import UIKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+extension UIKit.UIView {
+  @_Concurrency.MainActor(unsafe) public func setCornerRadius(cornerRadius: CoreFoundation.CGFloat)
+}
+extension UIKit.UIImage {
+  public func alwaysUseTemplateMode()
+}
+extension UIKit.UIButton {
+  @_Concurrency.MainActor(unsafe) public class func createPrimaryButton(with text: Swift.String?, textColor: UIKit.UIColor, font: UIKit.UIFont, cornerRadius: CoreFoundation.CGFloat = 0.0, backgroundColor: UIKit.UIColor = .clear) -> UIKit.UIButton
+  @_Concurrency.MainActor(unsafe) public class func createPrimaryButton(with image: UIKit.UIImage?, textColor: UIKit.UIColor, font: UIKit.UIFont, cornerRadius: CoreFoundation.CGFloat = 0.0, backgroundColor: UIKit.UIColor = .clear) -> UIKit.UIButton
+}
+extension UIKit.UITableView {
+  @_Concurrency.MainActor(unsafe) public func registerWithNib<T>(with cell: T.Type) where T : UIKit.UITableViewCell
+  @_Concurrency.MainActor(unsafe) public func dequeueCell<T>(_ cellClass: T.Type, for indexPath: Foundation.IndexPath) -> T where T : UIKit.UITableViewCell
+}
+extension UIKit.UIEdgeInsets {
+  public init(top: CoreFoundation.CGFloat = 0, bottom: CoreFoundation.CGFloat = 0, left: CoreFoundation.CGFloat = 0, right: CoreFoundation.CGFloat = 0)
+  public var vertical: CoreFoundation.CGFloat {
+    get
+  }
+  public var horizontal: CoreFoundation.CGFloat {
+    get
+  }
+}
